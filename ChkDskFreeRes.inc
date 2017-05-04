@@ -8,11 +8,11 @@
 
 #Resource Version$ "CompanyName",      "BasicAware"
 #Resource Version$ "FileDescription",  "Check a disk's free space"
-#Resource Version$ "LegalCopyright",   "Copyright 2013, 2016 BasicAware"
+#Resource Version$ "LegalCopyright",   "Copyright 2013-2017 BasicAware"
 #Resource Version$ "OriginalFilename", "CheckDiskFree.exe"
 #Resource Version$ "ProductName",      "CheckDiskFree"
-#Resource Version$ "ProductVersion",   "1.0.0.0"
-#Resource Version$ "FileVersion",      "1.0.0.0"
+#Resource Version$ "ProductVersion",   "1.0.1.0"
+#Resource Version$ "FileVersion",      "1.0.1.0"
 #Resource Version$ "Comments",         "Written by Knuth Konrad"
 
 $COMPANY_NAME = "BasicAware"

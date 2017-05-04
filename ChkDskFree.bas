@@ -8,10 +8,11 @@
 '   Source: -
 '  Changed: -
 '------------------------------------------------------------------------------
-#Compile Exe "CheckDiskFree.exe"
+#Compile Exe ".\CheckDiskFree.exe"
 #Option Version5
 #Dim All
 
+#Break On
 #Debug Error On
 #Tools Off
 
@@ -19,7 +20,7 @@ DefLng A-Z
 
 %VERSION_MAJOR = 1
 %VERSION_MINOR = 0
-%VERSION_REVISION = 0
+%VERSION_REVISION = 1
 
 ' Version information resource
 #Include ".\ChkDskFreeRes.inc"
