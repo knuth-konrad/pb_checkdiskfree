@@ -6,7 +6,8 @@
 '
 '   Author: Knuth Konrad 15.07.2016
 '   Source: -
-'  Changed: -
+'  Changed: 15.05.2017
+'           - Application manifest added.
 '------------------------------------------------------------------------------
 #Compile Exe ".\CheckDiskFree.exe"
 #Option Version5
@@ -20,7 +21,7 @@ DefLng A-Z
 
 %VERSION_MAJOR = 1
 %VERSION_MINOR = 0
-%VERSION_REVISION = 1
+%VERSION_REVISION = 2
 
 ' Version information resource
 #Include ".\ChkDskFreeRes.inc"
