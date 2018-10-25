@@ -8,6 +8,8 @@
 '   Source: -
 '  Changed: 15.05.2017
 '           - Application manifest added.
+'           25.10.2018
+'           - Fixed a localisation bug for the formatted size oin bytes returned
 '------------------------------------------------------------------------------
 #Compile Exe ".\CheckDiskFree.exe"
 #Option Version5
@@ -21,7 +23,7 @@ DefLng A-Z
 
 %VERSION_MAJOR = 1
 %VERSION_MINOR = 0
-%VERSION_REVISION = 2
+%VERSION_REVISION = 3
 
 ' Version information resource
 #Include ".\ChkDskFreeRes.inc"
@@ -66,7 +68,7 @@ Function PBMain()
 
    ' Application intro
    ConHeadline "CheckDiskFree", %VERSION_MAJOR, %VERSION_MINOR, %VERSION_REVISION
-   ConCopyright "2012-2016", $COMPANY_NAME
+   ConCopyright "2012-2018", $COMPANY_NAME
    Con.StdOut ""
 
    '** Parse command line
@@ -151,7 +153,9 @@ Function PBMain()
       Case Else
          Function = 100
       End Select
-      StdOut " " & Extract$(FormatNumber(qudVal), ",") & " bytes."
+
+      StdOut " " & FormatNumberEx(qudVal, %True) & " bytes."
+
    Else
       Function = 100
    End If
